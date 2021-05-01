@@ -18,7 +18,7 @@ public class UserService {
 
     public UserEntity findUserByUsername(String username) {
         UserEntity user = userRepo.findUserEntityByUsername(username);
-        //if(user == null) throw new UserNotFoundException();
-        return userRepo.findUserEntityByUsername(username);
+        if (user == null) throw new UserNotFoundException();
+        return user;
     }
 }

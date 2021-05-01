@@ -14,6 +14,10 @@ public class ErrorEntity {
         this.errors = errors;
     }
     static class Errors {
+        public ArrayList<String> getBody() {
+            return body;
+        }
+
         ArrayList<String> body;
 
         private Errors(ArrayList<String> body) {

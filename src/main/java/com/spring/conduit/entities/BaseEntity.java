@@ -10,7 +10,7 @@ import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
 @MappedSuperclass
-abstract class BaseEntity {
+abstract public class BaseEntity {
     private Long id;
     private Date createdAt;
     private Date updatedAt;
